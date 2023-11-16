@@ -1,0 +1,24 @@
+<h2 style="color: brown;" >welcome to Products Page</h2>
+<a href="/realtimeproducts"></a>
+<hr>
+<br><br>
+
+<ul>
+    {{#each result}}
+
+    <div>
+        <h3>ID: {{this.id}}</h3>
+        <h3>Title: {{this.title}}</h3>
+        <h3>Descripton: {{this.descripton}}</h3>
+        <h3>Price: {{this.price}}</h3>
+        <h3>Image: {{this.thunnail}}</h3>
+        <h3>Code: {{this.code}}</h3>
+        <h3>stock: {{this.category}}</h3>
+        <h3>Category: {{this.status}}</h3>
+        <h3>Status: {{}}</h3>
+    </div>
+</ul>
+{{/each}}
+<br>
+
+<script src="socket.io/socket.io.js"></script>
